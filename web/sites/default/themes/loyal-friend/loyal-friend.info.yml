@@ -1,0 +1,10 @@
+name: Loyal Friend
+type: theme
+description: 'A theme that makes you feel part of the animal care and respect for life.'
+core_version_requirement: ^10
+base theme: olivero
+
+regions:
+  header: 'Header'
+  content: 'Content'
+  footer: 'Footer'
