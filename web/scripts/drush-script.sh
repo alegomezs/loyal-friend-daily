@@ -1,8 +1,8 @@
 # Enable multiple modules
-# drush en devel admin_toolbar -y
+drush en devel admin_toolbar -y
 
 # Set default theme
-# drush config-set system.theme default loyal_friend -y
+drush config-set system.theme default loyal_friend -y
 
 # Install theme dependencies.
 cd /web/themes/loyal_friend
