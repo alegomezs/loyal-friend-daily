@@ -1,0 +1,12 @@
+name: Loyal Friend
+type: theme
+description: 'A theme that makes you feel one with nature and animal care.'
+core_version_requirement: ^11
+base theme: olivero
+libraries:
+  - loyal_friend/global-styling
+regions:
+  header: 'Header'
+  content: 'Content'
+  footer: 'Footer'
+screenshot: loyal_friend.png

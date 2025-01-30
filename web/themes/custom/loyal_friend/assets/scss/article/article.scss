@@ -1,0 +1,10 @@
+@use '../variables';
+
+.node__title {
+    a {
+        color: variables.$primary-color;        
+        &:hover{
+            color: variables.$secondary-color;
+        }
+    }
+}

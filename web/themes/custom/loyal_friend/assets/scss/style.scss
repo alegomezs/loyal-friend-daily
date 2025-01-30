@@ -1,0 +1,7 @@
+@use 'variables';
+@use 'article/article.scss';
+
+body {
+    background-color: variables.$background-color;
+    background-image: none;
+}
