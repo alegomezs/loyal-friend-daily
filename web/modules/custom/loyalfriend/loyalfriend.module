@@ -1,0 +1,12 @@
+<?php
+/**
+ * Implements hook_block_view_alter().
+ */
+function loyalfriend_block_view_alter(array &$build, \Drupal\Core\Block\BlockPluginInterface $block) {
+    // Get the block machine name.
+    $block_id = $block->getPluginId();
+    // Disable a specific block.
+    if ($block_id === 'loyal_friend_search_form_wide') {
+      $build = []; 
+    }
+  }

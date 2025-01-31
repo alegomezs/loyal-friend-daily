@@ -31,6 +31,7 @@
 /web/sites/example.sites.php
 /web/sites/README.txt
 /web/themes/README.txt
+/web/themes/contrib
 /web/.csslintrc
 /web/.editorconfig
 /web/.eslintignore
