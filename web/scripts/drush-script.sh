@@ -1,12 +1,12 @@
 # Enable multiple modules
-drush en devel admin_toolbar -y
-
 # Set default theme
 drush config-set system.theme default loyal_friend -y
 
 # Install theme dependencies.
-cd /web/themes/loyal_friend
+ddev ssh
+cd web/themes/custom/loyal_friend/
 npm install sass --save-dev
+exit
 
 # Clear all caches
 drush cr
