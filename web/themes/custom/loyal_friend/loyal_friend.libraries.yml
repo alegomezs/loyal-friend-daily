@@ -1,7 +1,7 @@
 global-styling:
   css:
     theme:
-      assets/css/style.css: {}
+      assets/css/styles.css: {}
 
 global-scripts:
   js:

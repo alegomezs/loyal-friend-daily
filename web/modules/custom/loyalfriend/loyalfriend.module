@@ -1,12 +1,11 @@
 <?php
 /**
- * Implements hook_block_view_alter().
+ * Implements hook_theme_suggestions_HOOK_alter for blocks.
  */
-function loyalfriend_block_view_alter(array &$build, \Drupal\Core\Block\BlockPluginInterface $block) {
-    // Get the block machine name.
-    $block_id = $block->getPluginId();
-    // Disable a specific block.
-    if ($block_id === 'loyal_friend_search_form_wide') {
-      $build = []; 
-    }
+function loyal_friend_theme_suggestions_block_alter(&$suggestions, $variables) {
+
+  // Load theme suggestions for blocks from parent theme.
+  foreach ($suggestions as &$suggestion) {
+    $suggestion = str_replace('loyal_friend_', 'bootstrap_', $suggestion);
   }
+}

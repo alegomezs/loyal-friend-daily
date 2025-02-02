@@ -1,0 +1,41 @@
+@use 'variables';
+@use 'article/article.scss';
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+a {
+    color: variables.$secondary-color;
+    text-decoration: none;
+    &:hover {
+        opacity: 95%;
+    }
+}
+
+h1, h2 {
+    color: variables.$primary-color;
+    a {
+        color: variables.$primary-color;        
+    }
+}
+
+h3 {
+    color: variables.$terciary-color;
+    a {
+        color: variables.$terciary-color;               
+    }
+}
+
+h1, h2, h3 {
+    a {
+        &:hover{
+            opacity: 95%;
+        }
+    }
+}
+
+body, html {
+    background-color: variables.$background-color;
+    background-image: none;
+    font-family: "Merriweather", serif;
+    height: 100%;
+}
+
