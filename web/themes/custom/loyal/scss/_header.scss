@@ -1,0 +1,56 @@
+@use 'variables';
+
+#navbar-main {
+    .navbar-brand {
+        color: transparent;
+        img {
+            width: 200px;
+            height: auto;
+        }
+    }
+}
+
+header {
+    margin-bottom: 50px;
+    .navbar {
+        padding: 20px 0;
+        background-color: variables.$terciary-color!important;
+        box-shadow: 3px 2px 4px 2px #e1e6fb;
+        a {
+            &.site-title {
+                color: variables.$primary-color!important;
+            }
+        }     
+        .block-search {
+            form {
+                .form-actions {
+                    margin-top: 0;
+                }
+            }                 
+        }    
+    }
+}
+
+.nav-link {
+    color: variables.$primary-color;
+}
+
+
+@media (min-width: 992px) {
+    .navbar-expand-lg {
+
+        .navbar-collapse {
+            display: flex !important;
+            flex-wrap: wrap;
+            height: auto;
+            align-content: space-between;
+    
+            > * {        
+                flex: 1 1 50%;
+            }
+        }
+        .navbar-nav {
+            flex-direction: column;
+        }
+    }
+}

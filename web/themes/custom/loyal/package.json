@@ -1,0 +1,16 @@
+{
+  "name": "loyal",
+  "version": "1.0.0",
+  "description": "[Bootstrap 5](https://www.drupal.org/project/bootstrap5) subtheme.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "sass scss/main.scss css/main.css --style=compressed",
+    "watch": "sass --watch --style=compressed scss/main.scss css/main.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.84.0"
+  }
+}

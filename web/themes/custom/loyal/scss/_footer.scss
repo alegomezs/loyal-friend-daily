@@ -1,0 +1,7 @@
+@use 'variables';
+
+footer {
+    &.mt-auto{
+        background-color: variables.$primary-color!important;        
+    }
+}

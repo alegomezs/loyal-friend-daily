@@ -1,6 +1,13 @@
+// import files
 @use 'variables';
-@use 'article/article.scss';
+@use 'base';
+@use 'header';
+@use 'footer';
+@use 'article/article';
+@use 'article/teaser';
+@use 'pages/frontpage';
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
 
 a {
     color: variables.$secondary-color;
@@ -8,6 +15,10 @@ a {
     &:hover {
         opacity: 95%;
     }
+}
+
+ul, li {
+    list-style-type: none;
 }
 
 h1, h2 {
@@ -37,5 +48,21 @@ body, html {
     background-image: none;
     font-family: "Merriweather", serif;
     height: 100%;
+    width: 100%;
+    margin: 0;
 }
 
+#search-block-form {
+    gap: 5px;
+}
+
+.node__submitted,
+.node__meta {
+    font-size: 12px;
+    font-style: italic;
+    color: grey;
+}
+
+.feed-icons {
+    margin: 20px 0;
+}

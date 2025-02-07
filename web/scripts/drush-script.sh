@@ -1,10 +1,14 @@
 # Enable multiple modules
-# Set default theme
-drush config-set system.theme default loyal_friend -y
+
+# Installing neccesary themes and set default theme
+composer require 'drupal/bootstrap5:^4.0'
+drush theme:install bootstrap5
+drush theme:install loyal
+drush config-set system.theme default loyal -y
 
 # Install theme dependencies.
 ddev ssh
-cd web/themes/custom/loyal_friend/
+cd web/themes/custom/loyal/
 npm install sass --save-dev
 exit
 
@@ -12,9 +16,6 @@ exit
 drush config:set system.performance cache.page_max_age 0 -y
 drush config:set system.performance css.preprocess 0 -y
 drush config:set system.performance js.preprocess 0 -y
-
-# Enable Twig debug mode
-drush php:eval "\Drupal::keyValue('development_settings')->setMultiple(['disable_rendered_output_cache_bins' => TRUE, 'twig_debug' => TRUE, 'twig_cache_disable' => TRUE]);"
 
 # Clear all caches
 drush cr
