@@ -3,90 +3,95 @@
 
 body {
     &.page-node-type-article {
-        ol {
-            &.breadcrumb {
-                list-style-type: none;
-                padding: 0;
-            }
-            
-            li {
-                display: inline-block;
-                position: relative;
-                    // Last child
-                &:last-child {
-                    a {
-                        cursor: default;
+        main {
+            .container {
+                margin-bottom: 50px;
+                ol {
+                    &.breadcrumb {
+                        list-style-type: none;
+                        padding: 0;
                     }
                     
-                    &::before,
-                    &::after {
-                        background: #ffffc0;
-                    }
-                }
-                
-                // :Hover
-                &:not(:last-child):hover {
-                    &::before,
-                    &::after {
-                        background: variables.$terciary-color;
-                    }
-                }
-                
-                &::before,
-                &::after{
-                    content: '';
-                    position: absolute;
-                    left: 0;
-                    height: 50%;
-                    width: 100%;
-                    background: white;
-                    border-left: 2px solid #666;
-                    border-right: 2px solid #666;
-                    z-index: -2;
-                }
-                
-                &::before {
-                    top: -2px;
-                    transform: skew(30deg);
-                    border-top: 2px solid #666;
-                }
-                
-                &::after {
-                    bottom: -2px;
-                    transform: skew(-30deg);
-                    border-bottom: 2px solid #666;
-                }
-            }
-            
-            a {
-                display: inline-block;
-                position: relative;
-                line-height: 2.5;
-                padding: 0 20px;
-                color: #666;
-                text-decoration: none;
-            }
-            
-            li {
-                &:first-child {
-                    background-color: white;
-                    border-left: 2px solid #666;
-                    left: -5px;
-                    box-sizing: content-box;
-            
-                    &:hover {
-                         background-color: variables.$terciary-color;			
-                    }
-            
-                    &::before,
-                    &::after {
-                            left: 5px;
-            
-            
+                    li {
+                        display: inline-block;
+                        position: relative;
+                            // Last child
+                        &:last-child {
+                            a {
+                                cursor: default;
+                            }
+                            
+                            &::before,
+                            &::after {
+                                background: #ffffc0;
+                            }
+                        }
+                        
+                        // :Hover
+                        &:not(:last-child):hover {
+                            &::before,
+                            &::after {
+                                background: variables.$terciary-color;
+                            }
+                        }
+                        
+                        &::before,
+                        &::after{
+                            content: '';
+                            position: absolute;
+                            left: 0;
+                            height: 50%;
+                            width: 100%;
+                            background: white;
+                            border-left: 2px solid #666;
+                            border-right: 2px solid #666;
+                            z-index: -2;
+                        }
+                        
+                        &::before {
+                            top: -2px;
+                            transform: skew(30deg);
+                            border-top: 2px solid #666;
+                        }
+                        
+                        &::after {
+                            bottom: -2px;
+                            transform: skew(-30deg);
+                            border-bottom: 2px solid #666;
                         }
                     }
+                    
+                    a {
+                        display: inline-block;
+                        position: relative;
+                        line-height: 2.5;
+                        padding: 0 20px;
+                        color: #666;
+                        text-decoration: none;
+                    }
+                    
+                    li {
+                        &:first-child {
+                            background-color: white;
+                            border-left: 2px solid #666;
+                            left: -5px;
+                            box-sizing: content-box;
+                    
+                            &:hover {
+                                background-color: variables.$terciary-color;			
+                            }
+                    
+                            &::before,
+                            &::after {
+                                    left: 5px;
+                    
+                    
+                                }
+                            }
+                    }
+                }
             }
-        }
+        } 
     }
     &.path-frontpage {
         .node--type-article {
