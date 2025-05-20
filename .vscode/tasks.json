@@ -1,0 +1,14 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "build",
+			"path": "web/core",
+			"group": "build",
+			"problemMatcher": [],
+			"label": "npm: build - web/core",
+			"detail": "yarn build:css & yarn build:ckeditor5 & yarn vendor-update"
+		}
+	]
+}

@@ -14,11 +14,10 @@ header {
     margin-bottom: 50px;
     .navbar {
         padding: 20px 0;
-        background-color: variables.$terciary-color!important;
-        box-shadow: 3px 2px 4px 2px #e1e6fb;
+        background-color: variables.$terciary-color!important;        
         a {
             &.site-title {
-                color: variables.$primary-color!important;
+                color: variables.$secondary-color!important;
             }
         }     
         .block-search {
@@ -32,7 +31,7 @@ header {
 }
 
 .nav-link {
-    color: variables.$primary-color;
+    color: variables.$secondary-color;
 }
 
 

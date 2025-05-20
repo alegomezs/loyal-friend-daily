@@ -50,6 +50,7 @@ body, html {
     height: 100%;
     width: 100%;
     margin: 0;
+    color: variables.$primary-color;
 }
 
 #search-block-form {
@@ -60,9 +61,27 @@ body, html {
 .node__meta {
     font-size: 12px;
     font-style: italic;
-    color: grey;
+    color: variables.$primary-color;
+}
+
+
+.field--name-field-image a {
+width: 100%;
+height: 100%;
+    .img-fluid {
+        object-fit: cover;
+    }
 }
 
 .feed-icons {
     margin: 20px 0;
+}
+
+.btn-primary {
+    background-color: variables.$primary-btn;
+    border-color: variables.$primary-btn;
+}
+
+.form-control {
+    background-color: variables.$primary-color;
 }

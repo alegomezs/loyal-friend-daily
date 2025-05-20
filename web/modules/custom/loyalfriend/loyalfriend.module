@@ -1,11 +1,1 @@
-<?php
-/**
- * Implements hook_theme_suggestions_HOOK_alter for blocks.
- */
-function loyal_friend_theme_suggestions_block_alter(&$suggestions, $variables) {
 
-  // Load theme suggestions for blocks from parent theme.
-  foreach ($suggestions as &$suggestion) {
-    $suggestion = str_replace('loyal_friend_', 'bootstrap_', $suggestion);
-  }
-}
